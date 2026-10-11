@@ -7,7 +7,7 @@
 - Users can add tags to notes and filter notes by tag.
 - The service validates note titles and returns consistent API errors.
 - Users can access their notes from different devices.
-
+ 
 ## 2. Non-functional requirements
 
 - **Availability:** The service should remain available when an individual app server fails.
