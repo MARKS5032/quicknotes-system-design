@@ -5,7 +5,7 @@
 QuickNotes uses a relational SQL database because users, notes, tags, and their relationships are structured and need referential integrity. Primary keys, foreign keys, unique constraints, transactions, and joins make it easier to protect data consistency. SQLite is convenient for local practice; a production deployment could use PostgreSQL or another managed relational database.
 
 ## Entities and columns
-
+ 
 ### `users`
 
 - `id`: integer primary key.
