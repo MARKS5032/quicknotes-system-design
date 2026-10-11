@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickNotes API Client</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="api.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <h1>QuickNotes</h1>
+        <p>Practice API client</p>
+    </header>
+
+    <main>
+        <section class="panel" aria-labelledby="load-heading">
+            <h2 id="load-heading">Server notes</h2>
+            <p>Load sample notes from the JSONPlaceholder practice API.</p>
+            <button id="load-btn" type="button">Load notes</button>
+            <p id="status" class="status" role="status" aria-live="polite">Ready to load notes.</p>
+        </section>
+
+        <section class="panel" aria-labelledby="create-heading">
+            <h2 id="create-heading">Create a note</h2>
+            <form id="note-form">
+                <label for="title-input">Title (required, maximum 100 characters)</label>
+                <input id="title-input" name="title" type="text" maxlength="100" required>
+
+                <label for="body-input">Body (optional)</label>
+                <textarea id="body-input" name="body" rows="4"></textarea>
+
+                <button id="submit-btn" type="submit">Create note</button>
+            </form>
+        </section>
+
+        <section class="panel" aria-labelledby="notes-heading">
+            <h2 id="notes-heading">Notes</h2>
+            <ul id="notes-list" aria-live="polite"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Learning project using JSONPlaceholder. Created notes are not persisted by the practice API.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #24313d;
+    background: #f3f6f8;
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.site-header,
+footer {
+    padding: 1.25rem;
+    text-align: center;
+    background: #145c63;
+    color: white;
+}
+
+.site-header h1,
+.site-header p,
+footer p {
+    margin: 0.25rem;
+}
+
+main {
+    width: min(900px, 92%);
+    margin: 2rem auto;
+}
+
+.panel {
+    margin-bottom: 1.25rem;
+    padding: 1.25rem;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+button {
+    padding: 0.65rem 1rem;
+    border: 0;
+    border-radius: 6px;
+    background: #145c63;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+    background: #0c4147;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #aebbc3;
+    border-radius: 6px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.status {
+    padding: 0.65rem;
+    border-radius: 6px;
+    background: #edf1f3;
+}
+
+.status.success {
+    color: #14532d;
+    background: #dcfce7;
+}
+
+.status.error {
+    color: #991b1b;
+    background: #fee2e2;
+}
+
+#notes-list {
+    display: grid;
+    gap: 1rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.note-card {
+    padding: 1rem;
+    border: 1px solid #d7e0e5;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+.note-card h3 {
+    margin-top: 0;
+}
+
+.note-card p {
+    white-space: pre-wrap;
+}
+
+.delete-btn {
+    background: #a62b2b;
+}
+
+.delete-btn:hover:not(:disabled) {
+    background: #7f1d1d;
+}
+
+.empty-state {
+    color: #5b6870;
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 94%;
+        margin: 1rem auto;
+    }
+
+    .panel {
+        padding: 1rem;
+    }
+}
