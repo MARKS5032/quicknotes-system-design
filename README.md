@@ -2,7 +2,7 @@
 
 QuickNotes is a note-taking service design project. It includes a browser API client that practises GET, POST, and DELETE requests against JSONPlaceholder, plus design documents for a production-ready service for one million registered users.
 
-## Project files
+## Project files 
 
 - `index.html` — API client interface.
 - `style.css` — responsive styling and success/error status styles.
