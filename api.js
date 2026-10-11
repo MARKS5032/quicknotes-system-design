@@ -1,7 +1,7 @@
 const API_URL = "https://jsonplaceholder.typicode.com/posts";
 
 const loadButton = document.querySelector("#load-btn");
-const noteForm = document.querySelector("#note-form");
+const noteForm = document.querySelector("#note-form"); 
 const titleInput = document.querySelector("#title-input"); 
 const bodyInput = document.querySelector("#body-input");
 const submitButton = document.querySelector("#submit-btn");
