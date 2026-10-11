@@ -4,7 +4,7 @@
 
 The production API is hosted at `https://api.quicknotes.example/v1`. The `.example` domain is illustrative and should be replaced with the deployed API hostname. The API uses JSON, HTTPS, authentication, and resource-oriented URLs. JSONPlaceholder is only used by the practice client and is not the production API.
 
-## Endpoints
+## Endpoints 
 
 | Method | Path | Description | Success status |
 |---|---|---|---|
